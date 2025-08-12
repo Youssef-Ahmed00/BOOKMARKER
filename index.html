@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/all.min.css">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>BookMarker</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- heading -->
+        <div class="bookmarkHead">
+            <h1 class="mt-5">BookMarker</h1>
+        </div>
+
+        <hr>
+        <br>
+        <!-- Bookmark main -->
+        <div class="inner w-100 pt-2 my-3">
+            <h2 class="inner fw-500 mb-4 text-center"><i class="fa-solid fa-bookmark"></i> Bookmark your
+                favorite websites <i class="fa-solid fa-bookmark"></i></h2>
+
+            <label class="fw-600 mb-2" for="siteName"><i class="fa-solid fa-book-bookmark me-2 "></i>Site Name</label>
+            <input type="text" class="form-control selectedInput" placeholder="Bookmark Name" id="siteName">
+                <!-- Alert -->
+                <div id="alertNameBox" class="alert alert-danger d-none my-2 py-2">Site name must contain at least 3 characters
+                </div>
+
+                <label for="siteUrl" class="fw-600 mb-2 mt-4"><i class="fa-solid fa-link"></i>Site Url</label>
+                <input type="url" id="siteUrl" class="form-control selectedInput" placeholder="Website Url">
+                <!-- Alert -->
+                <div id="alertURLBox" class="alert alert-danger my-2 py-2 d-none">Site Url must be valid</div>
+                <div class="text-center my-4">
+                    <button onclick="addBookmark()" id="addBtn" class="btn btn-submit px-5">submit</button>
+
+            </div>
+        </div>
+        <hr>
+        <!-- BookMark Table -->
+
+        <table class="bg-light w-100 text-center">
+            <thead>
+                <th>Index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="bookmark-text">
+            </tbody>
+        </table>
+
+        <!-- ! AlertBox  !-->
+        <div id="fixedBox" class="rounded-2 shadow-lg d-none p-4 justify-content-center align-items-center text-center">
+            <div class="alertMsg bg-light rounded-2 p-4">
+                <div class="d-flex justify-content-between align-items-center">
+                    <ul class="circles d-flex list-unstyled">
+                        <li class="rounded-circle1"></li>
+                        <li class="rounded-circle2"></li>
+                        <li class="rounded-circle3"></li>
+                    </ul>
+                    <div class="closeFixedBox">
+                        <i id="closeBtn" class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+                <h4>
+                    Site Name or Url is not valid, Please follow the rules below :
+                </h4>
+                <p>
+                    <i class="fa-regular fa-circle-right p-2"></i>
+                    Site name must contain at least 3 characters
+                </p>
+                <p class="mb-0 fw-400 pt-2">
+                    <i class="fa-regular fa-circle-right p-2"></i>
+                    Site URL must be a valid one
+                </p>
+
+
+            </div>
+        </div>
+
+
+    </div>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/index.js"></script>
+
+
+</body>
+
+</html>
