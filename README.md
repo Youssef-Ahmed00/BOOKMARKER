@@ -83,3 +83,15 @@ It’s built using **Bootstrap**, **CSS**, and **Vanilla JavaScript** with full 
 
 ## 📂 Project Structure  
 
+BookMarker/
+│
+├── index.html                 # Main HTML file - app structure & layout
+├── style.css                  # Custom CSS styling
+├── script.js                  # CRUD logic & form validations
+│
+├── assets/                    # Folder for images/screenshots
+│   └── bookmarker-preview.png # Project preview image for README
+│
+└── README.md                  # Project documentation for GitHub
+
+
