@@ -15,15 +15,6 @@ It’s built using **Bootstrap**, **CSS**, and **Vanilla JavaScript** with full 
 
 ---
 
-## 🖼 Preview  
-
-![BookMarker Preview](assets/bookmarker-preview.png)  
-*Example of the BookMarker interface — add, visit, and delete bookmarks easily.*  
-
-> ℹ️ **Tip:** Save your screenshot in an `assets` folder inside your repo and name it `bookmarker-preview.png` (or adjust the path above).
-
----
-
 ## ✨ Features  
 
 - 🆕 **Add Bookmarks**  
@@ -53,7 +44,6 @@ It’s built using **Bootstrap**, **CSS**, and **Vanilla JavaScript** with full 
   - Displays inline error messages.  
 
 ---
-
 ## 🖥 How to Use  
 
 1. ✏️ Enter a **Site Name** (min 3 characters).  
@@ -63,10 +53,6 @@ It’s built using **Bootstrap**, **CSS**, and **Vanilla JavaScript** with full 
    - ❌ Invalid → Error message displayed.  
 4. 🔗 Click **Visit** to open the site.  
 5. 🗑 Click **Delete** to remove it.  
-
----
-
-
 
 ---
 
